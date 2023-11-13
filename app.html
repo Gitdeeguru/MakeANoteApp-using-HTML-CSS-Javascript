@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Books</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <div class="head">
+    <h1>Welcome TO Digital Books</h1>
+  </div>
+
+  <div class="container">
+    <div class="book-container">
+      <h2>Rich DAD Poor DAD</h2>
+      <h4> Deepak </h4>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta a cum tenetur error, voluptatibus tempore maxime. Accusantium iusto, quidem nostrum enim maxime adipisci, doloribus, voluptates cupiditate officia dolorum necessitatibus minima.</p>
+      <button onclick="deleteButton(event)">Delete</button>
+    </div>
+  </div>
+
+
+  <div class="popup-overlay"></div>
+  <div class="popup-box">
+    <h2>AddBook</h2>
+    <form>
+      <input type="text" placeholder="Book Title" id="book-title-input">
+      <input type="text" placeholder="Book Author" id="book-Author-input">
+      <textarea placeholder="Short Description" id="book-description"></textarea>
+      <button id="add-book">ADD</button>
+      <button id="cancel-book">Cancel</button>
+    </form>
+  </div>
+
+
+  <button class="add-btn" id="add-popButton">+</button>
+  <script src="style.js"></script> 
+</body>
+</html>
